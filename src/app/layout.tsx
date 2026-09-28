@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'AccessGate • QR Admin Check-In & Verification Suite',
-  description: 'High-speed QR code ticket scanner, live registration verification, and attendee management panel.',
+  title: 'HowToHackathon Attendance Portal',
+  description: 'Official Attendance and Participant Verification Portal for HowToHackathon.',
 };
 
 export default function RootLayout({

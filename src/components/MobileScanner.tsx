@@ -183,9 +183,9 @@ export const MobileScanner: React.FC<MobileScannerProps> = ({ onScan, isOpen }) 
         aspectRatio: '1 / 1',
         borderRadius: '24px',
         overflow: 'hidden',
-        background: '#040711',
-        border: '2px solid rgba(6, 182, 212, 0.5)',
-        boxShadow: '0 0 35px rgba(6, 182, 212, 0.25)',
+        background: '#070203',
+        border: '2px solid rgba(239, 68, 68, 0.6)',
+        boxShadow: '0 0 35px rgba(239, 68, 68, 0.35)',
       }}>
         {/* Html5Qrcode video target */}
         <div id={elementId} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -199,13 +199,13 @@ export const MobileScanner: React.FC<MobileScannerProps> = ({ onScan, isOpen }) 
             position: 'absolute',
             inset: '14%',
             pointerEvents: 'none',
-            border: '1.5px dashed rgba(6, 182, 212, 0.4)',
+            border: '1.5px dashed rgba(239, 68, 68, 0.45)',
             borderRadius: '16px',
           }}>
-            <div style={{ position: 'absolute', top: -3, left: -3, width: 22, height: 22, borderTop: '3px solid #38bdf8', borderLeft: '3px solid #38bdf8', borderRadius: '4px 0 0 0' }} />
-            <div style={{ position: 'absolute', top: -3, right: -3, width: 22, height: 22, borderTop: '3px solid #38bdf8', borderRight: '3px solid #38bdf8', borderRadius: '0 4px 0 0' }} />
-            <div style={{ position: 'absolute', bottom: -3, left: -3, width: 22, height: 22, borderBottom: '3px solid #38bdf8', borderLeft: '3px solid #38bdf8', borderRadius: '0 0 0 4px' }} />
-            <div style={{ position: 'absolute', bottom: -3, right: -3, width: 22, height: 22, borderBottom: '3px solid #38bdf8', borderRight: '3px solid #38bdf8', borderRadius: '0 0 4px 0' }} />
+            <div style={{ position: 'absolute', top: -3, left: -3, width: 22, height: 22, borderTop: '3px solid #ef4444', borderLeft: '3px solid #ef4444', borderRadius: '4px 0 0 0' }} />
+            <div style={{ position: 'absolute', top: -3, right: -3, width: 22, height: 22, borderTop: '3px solid #ef4444', borderRight: '3px solid #ef4444', borderRadius: '0 4px 0 0' }} />
+            <div style={{ position: 'absolute', bottom: -3, left: -3, width: 22, height: 22, borderBottom: '3px solid #ef4444', borderLeft: '3px solid #ef4444', borderRadius: '0 0 0 4px' }} />
+            <div style={{ position: 'absolute', bottom: -3, right: -3, width: 22, height: 22, borderBottom: '3px solid #ef4444', borderRight: '3px solid #ef4444', borderRadius: '0 0 4px 0' }} />
           </div>
         )}
 
@@ -217,9 +217,9 @@ export const MobileScanner: React.FC<MobileScannerProps> = ({ onScan, isOpen }) 
               position: 'absolute',
               top: '14px',
               right: '14px',
-              background: torchOn ? '#fbbf24' : 'rgba(0, 0, 0, 0.6)',
+              background: torchOn ? '#fbbf24' : 'rgba(0, 0, 0, 0.75)',
               color: torchOn ? '#000000' : '#ffffff',
-              border: 'none',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
               borderRadius: '50%',
               width: '40px',
               height: '40px',
@@ -239,7 +239,7 @@ export const MobileScanner: React.FC<MobileScannerProps> = ({ onScan, isOpen }) 
           <div style={{
             position: 'absolute',
             inset: 0,
-            background: 'rgba(9, 13, 22, 0.96)',
+            background: 'rgba(12, 5, 8, 0.96)',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -250,7 +250,7 @@ export const MobileScanner: React.FC<MobileScannerProps> = ({ onScan, isOpen }) 
             zIndex: 30,
           }}>
             {isHttpInsecure ? (
-              <Camera size={40} color="#38bdf8" />
+              <Camera size={40} color="#ef4444" />
             ) : (
               <CameraOff size={36} color="#fb7185" />
             )}
@@ -270,14 +270,14 @@ export const MobileScanner: React.FC<MobileScannerProps> = ({ onScan, isOpen }) 
               alignItems: 'center',
               justifyContent: 'center',
               gap: '8px',
-              background: 'linear-gradient(135deg, #0284c7, #06b6d4)',
+              background: 'linear-gradient(135deg, #b91c1c, #ef4444)',
               color: '#ffffff',
               fontWeight: 700,
               fontSize: '0.85rem',
               padding: '12px 20px',
               borderRadius: '12px',
               cursor: 'pointer',
-              boxShadow: '0 4px 16px rgba(6, 182, 212, 0.4)',
+              boxShadow: '0 4px 18px rgba(239, 68, 68, 0.45)',
               width: '100%',
               maxWidth: '260px',
             }}>
